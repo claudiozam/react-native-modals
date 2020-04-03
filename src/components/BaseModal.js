@@ -170,8 +170,6 @@ class BaseModal extends Component<ModalProps, State> {
   }
 
   handleMove = (event): void => {
-    return;
-
     // prevent flashing when modal is closing and onMove callback invoked
     if (this.state.modalState === MODAL_CLOSING) {
       return;
@@ -235,12 +233,12 @@ class BaseModal extends Component<ModalProps, State> {
           <DraggableView
             style={StyleSheet.flatten([styles.draggableView, style])}
             onMove={this.handleMove}
-            onSwiping={onSwiping}
-            onRelease={onSwipeRelease}
+            //onSwiping={onSwiping}
+            //onRelease={onSwipeRelease}
             onSwipingOut={this.handleSwipingOut}
-            onSwipeOut={onSwipeOut}
-            swipeDirection={swipeDirection}
-            swipeThreshold={swipeThreshold}
+            //onSwipeOut={onSwipeOut}
+            //swipeDirection={swipeDirection}
+            //swipeThreshold={swipeThreshold}
           >
             {({ pan, onLayout }) => (
               <Fragment>

@@ -170,6 +170,8 @@ class BaseModal extends Component<ModalProps, State> {
   }
 
   handleMove = (event): void => {
+    return;
+
     // prevent flashing when modal is closing and onMove callback invoked
     if (this.state.modalState === MODAL_CLOSING) {
       return;
